@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap');
+
+
+ body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #b8b3b3;
+}
+
+header {
+    background-color: #363062;
+    color: #F5F5F5;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #F5F5F5;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #F99417;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #F99417;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+}
+
+nav ul li:hover:before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+
+/* main */
+
+main  {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-grow: 1;
+    padding: 2rem;
+    align-items: flex-start;
+}
+
+article, aside {
+    flex-basis: 48%;
+}
+
+/* baru */
+.run, .jalan {
+    flex-basis: calc(50% - 1rem); /* Biar ada jarak antara elemen */
+    box-sizing: border-box;
+    margin-bottom: 2rem;
+    transition: transform 0.3s ease;
+}
+
+aside .dibo{
+    flex-basis: calc(50% - 1rem); /* Biar ada jarak antara elemen */
+    box-sizing: border-box;
+    margin-top: 2rem;
+    position: sticky;
+    top: 2rem;}
+/* baru */
+
+.run {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    text-align: justify;
+}
+
+.jalan {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    text-align: justify;
+    
+}
+
+.run:hover {
+    transform: scale(1.05);
+}
+
+.jalan:hover {
+    transform: scale(1.05);
+}
+
+article h2 {
+    margin-top: 0;
+}
+
+aside {
+    background-color: #B15EFF;
+    color: #ffffff;
+    padding: 0rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 2;
+    text-align: justify;
+    margin-left: 30rem; */ /* Hapus baris ini
+    /* margin-right: 20rem; */ /* Hapus baris ini */
+    margin-top: 0px; /* Ini sepertinya harus diganti dengan nilai yang diinginkan */
+    position: sticky; /* Tambahkan ini */
+    top: 2rem; /* Sesuaikan dengan jarak dari atas yang diinginkan */
+  }
+    
+
+
+aside:hover {
+    transform: scale(1.05);
+}
+
+aside{
+    text-align: center;
+}
+
+
+
+aside img {
+    max-width: 100%;
+    width: 250px;
+    height: 300px;
+}
+
+/* ini adalah footer */
+footer {
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: #363062;
+}
+
+/* ini adalah tombol */
+
+.custom-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #4D4C7D;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+  }
+  
+  .custom-button:hover {
+    background-color: #363062;
+    transform: scale(1.05);
+  }
+
+  footer{
+    color:#FFF6F6 ;
+  }
+
